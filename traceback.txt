@@ -1,0 +1,45 @@
+❯ python3.9 ./numbers.py > traceback.txt
+
+
+Traceback (most recent call last):
+  File "/Users/jorgepiedrafita/Documents/dev/ai_number_read/./numbers.py", line 4, in <module>
+    import tensorflow as tf
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow/__init__.py", line 37, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 37, in <module>
+    from tensorflow.python.eager import context
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow/python/eager/context.py", line 26, in <module>
+    import numpy as np
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/__init__.py", line 144, in <module>
+    from . import core
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/__init__.py", line 71, in <module>
+    from . import numerictypes as nt
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/numerictypes.py", line 82, in <module>
+    import numbers
+  File "/Users/jorgepiedrafita/Documents/dev/ai_number_read/numbers.py", line 5, in <module>
+    import tensorflow_datasets as tfds
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/__init__.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/__init__.py", line 26, in <module>
+    from tensorflow_datasets.core import community  # pylint: disable=g-bad-import-order
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/community/__init__.py", line 18, in <module>
+    from tensorflow_datasets.core.community.huggingface_wrapper import mock_builtin_to_use_gfile
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/community/huggingface_wrapper.py", line 28, in <module>
+    from tensorflow_datasets.core import dataset_builder
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_builder.py", line 32, in <module>
+    from tensorflow_datasets.core import dataset_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_info.py", line 44, in <module>
+    from tensorflow_datasets.core import file_adapters
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/file_adapters.py", line 26, in <module>
+    from tensorflow_datasets.core.utils import type_utils
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/utils/__init__.py", line 19, in <module>
+    from tensorflow_datasets.core.naming import DatasetName
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/naming.py", line 24, in <module>
+    from tensorflow_datasets.core.utils import generic_path
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/utils/generic_path.py", line 22, in <module>
+    from tensorflow_datasets.core.utils import gpath
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/utils/gpath.py", line 27, in <module>
+    from tensorflow_datasets.core.utils import type_utils
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tensorflow_datasets/core/utils/type_utils.py", line 49, in <module>
+    Tensor = Union[tf.Tensor, tf.SparseTensor, tf.RaggedTensor]
+AttributeError: partially initialized module 'tensorflow' has no attribute 'Tensor' (most likely due to a circular import)
